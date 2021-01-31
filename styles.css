@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Copse&family=Crimson+Text:wght@700&display=swap');
+
+*{
+    margin:0;
+}
+
+body{
+    background: linear-gradient(#00D4F0,#95F5EF);
+    background-blend-mode: multiply,multiply;;
+}
+
+html {
+    font-family: 'Copse', serif;
+}
+
+.container{
+    margin: auto;
+    width: 25vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preResult{
+    font-size: 1.8rem !important;
+    border: none;
+}
+
+.span-two{
+    grid-column: span 2;
+}
+
+.allButtons{
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-auto-rows: minmax(60px, auto);
+    align-content: center;
+    justify-content: center;
+    padding: 5px;
+    position: absolute;
+    width: 20vw;
+    height: 50vh;
+}
+
+.op{
+    font-weight: bold;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.8rem;
+}
+.numbers {
+    font-size: 1.5rem;
+}
+
+input{
+    border: 1px solid white;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type=text]{
+    grid-column: 1/5;
+    background-color: #0b0d215e;
+    color: rgba(255, 255, 255, 0.767);
+    font-size: 2.5rem;
+
+    text-align: end;
+    font-weight: bold;
+    border: none;
+}
+input[type=text]:focus {
+    outline: none;
+    color: white;
+}
+
+input[type=text]:hover{
+    color: white;
+}
+
+input:hover:not(input[type=text]){
+    background: #a9d7f7;
+    border-color: #00D4F0;
+}
